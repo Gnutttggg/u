@@ -1,0 +1,112 @@
+
+.dropdown-genre {
+  position: fixed;
+  top: 150px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-key {
+  position: fixed;
+  top: 175px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-rhythm {
+  position: fixed;
+  top: 200px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-color {
+  position: fixed;
+  top: 225px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-intensity {
+  position: fixed;
+  top: 250px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-instrument {
+  position: fixed;
+  top: 275px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-1 {
+  position: fixed;
+  top: 300px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-2 {
+  position: fixed;
+  top: 325px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-3 {
+  position: fixed;
+  top: 350px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-4 {
+  position: fixed;
+  top: 375px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-5 {
+  position: fixed;
+  top: 400px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-6 {
+  position: fixed;
+  top: 425px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-7 {
+  position: fixed;
+  top: 450px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+.dropdown-chord-8 {
+  position: fixed;
+  top: 475px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+}
+
+
+.link-inputs-container {
+    position: fixed;
+  top: 525px; /* Adjust the top position as needed */
+  left: 50px; /* Adjust the left position as needed */
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-genre,
+.dropdown-key,
+.dropdown-rhythm,
+.dropdown-color,
+.dropdown-intensity,
+.dropdown-instrument,
+.dropdown-chord-1,
+.dropdown-chord-2,
+.dropdown-chord-3,
+.dropdown-chord-4,
+.dropdown-chord-5,
+.dropdown-chord-6,
+.dropdown-chord-7,
+.dropdown-chord-8,
+.link-inputs-container {
+  transform: translateY(15px);
+}

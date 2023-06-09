@@ -1,0 +1,94 @@
+.allfilters {
+
+}
+
+.intro-container {
+  display: flex;
+  position: fixed;
+  top: 30%;
+  left: 20px;
+}
+
+#chordFiltersContainer {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+}
+
+.genrefilter-container {
+  display: flex;
+  position: fixed;
+  top: 65%;
+  left: 20px;
+}
+
+.keyfilter-container {
+  display: flex;
+  position: fixed;
+  top: 75%;
+  left: 20px;
+}
+
+#specificFilterHeading {
+  position: fixed;
+  top: 22%;
+  left: 20px;
+  color: white;
+}
+
+#generalFilterHeading {
+  position: fixed;
+  top: 58%;
+  left: 20px;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+    position: fixed;
+  top: 50%;
+  left: 20px;
+  color: white;
+}
+
+
+#trackSearchInput {
+  width: 50px; /* Adjust the width as desired */
+  height: 10px; /* Adjust the height as desired */
+  font-size: 14px; /* Adjust the font size as desired */
+  padding: 5px; /* Adjust the padding as desired */
+  position: fixed;
+  left: 140px;
+  top: 50%;
+}
+
+#searchButton {
+  position: fixed;
+  font-size: 14px;
+  left: 207px;
+  top: 50%;
+  height: 25px;
+  background-color: black;
+  border-radius: 0;
+}
+
+#cancelButton {
+  position: fixed;
+  font-size: 14px;
+  left: 207px;
+  top: 50%;
+  height: 25px;
+  background-color: red;
+  border-radius: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 1;
+}
+

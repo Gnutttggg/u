@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "western-glazing-389102",
+  "private_key_id": "58aba6c089fc342f41cd6103b927592c3403d8dd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCN7JuU4yuJf+q6\nI0RVx4q+aQoAvPLVjEM+b/v4Uxx8wRA7g9olGv/k1rdMpmhygTtXG1QgIhYjzszF\nYas0OmjzsHpXO6Ac0q7ByKPejEvdSnX8XsXL6uFdgw3TSiwEnACJTr10E/en/5Jq\ns9Fct0dQWRsMlkptPBOTDZ54jQ38Cvy/xDnqqD4ipp56hXCUQR1nZyeF5U88c2MZ\n+qTU+y8yfRYcPaZBHBSfIh2gXLIalZamM5NczJQM0/e6JG5xUwH+/SxKN2OBNrk6\nf5FX+gKAfIkndhk21jj2aIiKST/XOu7uXjGBeLfRGVck1E8KsT6+TVOojTuVNziW\nZElqJb49AgMBAAECggEAAN8jo3nzsf/9npAJ4ub7VKkLfS6r5SDb5t3EM+W6xo9e\n/KaWJ+UvDiY9cPSSrqVZinLqBNqAvU6PVmT/qq3zKA/86F0+4f5vQVRsoTjGXIER\nEXA5kcOLB8p+wr3xYEPfAvjfU/+tZTQ+H3akQggEIZuyfVTM9zfHvP736rCfFd2v\nEUlAw1ye6nQMEar4F9Sz073APz92HwZx1e5+AbbCedTo5eBBEiDtOg+XyyHfEFUL\n4l+l33kSa3184GRGTZZKJ4Up090v382mPq0/tjP8dxjPNLYMNyCBfc2ZQX5cZedO\ni8CY+SsdQyIvixtgaVu61/LdxvYTpT5TWzwo+ILLcQKBgQDAtj+BHALiLgjF95rW\ngO/KLHd+YB0sgQ1ZXqS8jzJ4wJuLP4Ar6tv05C/JRWMGPlezju9zXC2TKwtk5ily\nVDu5XCP8slwFiitPXDMZqit85KoP/lhnB/mQkLemP3Vqs6WBvFhcD6MqJ0OrsP4F\nsNNgw0fKkNaNC4S+1SYZEEpGWQKBgQC8iIUCMfCNM0ngUzC3dbarrGq9Lt8dpwD/\nolJyy39y99ZEFO58UczHA0AEZBfB/eGGmaF2vjEKEJcMYqv+bX02T/aKNZTvTYdo\nY4zG5QPXSPbaJC87xXWL5crsaPbiAmFN/hhz9rUpA4wYqaHNfqqJ6WW/5oO7X2t+\nzfP2C8aChQKBgQCpcZV02ERQy1k7d/LVGJm+kkqe+7OrJe2u3uDKSr5+Hhyl2ze/\nZcnxEZJSzoe7PaWvY8Z3EF2iQP7LwPRAan/5A2NBFTKETHC4XsEvl8iVEBnX5jOk\npAZzbkuMCdAb+clUwV6P09ALiGqf1AgGyOuS8SF2otODQNV/Vbsh3ojwQQKBgFwx\npllccnWaDxZTmA8e0SVCOzAoK5Mkh6h6iDb6rGhcKbtBQR4qIilvvW5oQ/XpYM+h\ncQPQHcr+Md8soU7Z29EjaTxM13fuQbkadU0N0MMGOzCRYUepV8IBrSnOamw7Hbo1\n91891Xko8ulcinMi7eJi8A7XerO2BasMq7A2MezBAoGAWBcARmVG064yegpK0uT6\nWh87JqGdQBXru2ZkklM8hS9vAIYYkjgm/JUa8/yxukxNPOCRoS7vYB/lY2gkfo1b\nkys6/zRiPI9+JTJIT8aZNS5MSThhAkHNpHZU/FfvC2XyoVyqctft4hPY59SYhDxt\nhrkWPCWv9QrEeRJA4VT6h0s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "track-records@western-glazing-389102.iam.gserviceaccount.com",
+  "client_id": "110361213834766838088",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/track-records%40western-glazing-389102.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

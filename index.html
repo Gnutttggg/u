@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="dropdowns.css"> <!-- Link to dropdowns.css -->
+    <link rel="stylesheet" href="filters.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <title>Record something.</title>
+  </head>
+
+<h2 id="title">Tracks</h2>
+
+
+  <body>
+    <div class="filteroverlay"></div>
+    <div class="starredoverlay"></div>
+    <div class="topoverlay"></div>
+    <div class="button-container">
+      <button id="recordButton"><i class="fas fa-microphone"></i></button>
+    </div>
+    <button id="bookmarkButton"><i class="fas fa-bookmark"></i></button>
+    <button id="bookmarkDemoButton">Play from bookmarked time</button>
+
+    <div id="overlay"></div>
+    <div id="demoOverlay"></div>
+    <div id="trackOverlay"></div>
+    <div id="chooseFilterOverlay"></div>
+
+    <div id="recordButtonOverlay"></div>
+<button id="showStarredButton">
+  <i class="star-icon">&#9734;</i>
+  <span class="button-label">Starred Tracks</span>
+</button>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <label for="gridAudioPlayer" class="demo-label">Demo:</label>
+<audio id="gridAudioPlayer" controls></audio>
+
+
+    <audio id="demoPlayer" controls></audio>
+    <div class="volume-control">
+  <label for="volumeSlider">Vocal's Volume:</label>
+  <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+</div>
+    
+
+
+
+
+    <div class="container">
+      </div>
+    </div>
+
+<style>
+  #timer,
+  #recStart,
+  #recStop {
+    color: white;
+  }
+</style>
+    </div>
+ 
+    <div id="recStart"></div>
+    <div id="recStop"></div>
+
+<h3 id="uploadHeading"></h3>
+
+<div class="allfilters">
+  <h2 id="filterHeading">Find tracks</h2>
+  <h3 id="specificFilterHeading">Specific search:</h3>
+<div class="intro-container">
+<div class="rhythmfilter-container">
+<label for="rhythmfilter">Rhythm:</label>
+<select id="rhythmfilter">
+  <option value="">Random</option>
+  <option value="Dynamic">Dynamic</option>
+  <option value="Smooth">Smooth</option>
+  <option value="Sliding">Sliding</option>
+  <option value="Drifting">Drifting</option>
+</select>
+</div>
+
+<div class="colorfilter-container">
+<label for="colorfilter">Color:</label>
+<select id="colorfilter">
+  <option value="">Random</option>
+  <option value="Warm">Warm</option>
+  <option value="Cold">Cold</option>
+  <option value="Colorful">Colorful</option>
+  <option value="Stark">Stark</option>
+</select>
+</div>
+
+<div class="intensityfilter-container">
+<label for="intensityfilter">Intensity:</label>
+<select id="intensityfilter">
+  <option value="">Random</option>
+  <option value="Aggressive">Aggressive</option>
+  <option value="Soft">Soft</option>
+  <option value="Moderate">Moderate</option>
+</select>
+</div>
+
+<div class="instrumentfilter-container">
+<label for="instrumentfilter">Instrument:</label>
+<select id="instrumentfilter">
+  <option value="">Random</option>
+  <option value="Drum-and-bass">Drum-and-bass</option>
+  <option value="Guitar">Guitar</option>
+  <option value="Electric guitar">Electric guitar</option>
+  <option value="Pluck">Pluck</option>
+  <option value="Bass">Bass</option>
+  <option value="Strings">Strings</option>
+  <option value="Piano">Piano</option>
+  <option value="Synth">Synth</option>
+  <option value="Flute">Flute</option>
+  <option value="Violin">Violin</option>
+  <option value="Brass">Brass</option>
+  <option value="Vocal sample">Vocal sample</option>
+  <option value="Sound FX">Sound FX</option>
+  <option value="Banjo">Banjo</option>
+  <option value="Sitar">Sitar</option>
+  <option value="Harmonica">Harmonica</option>
+  <option value="Ukelele">Ukelele</option>
+</select>
+</div>
+   </div>
+
+<div id="chordFiltersContainer"></div>
+
+
+
+<h3 id="generalFilterHeading">General search:</h3>
+<div class="genrefilter-container">
+<label for="genreselect">Genre:</label>
+<select id="genreselect">
+  <option value="">All Genres</option>
+  <option value="Rock">Rock</option>
+  <option value="Pop">Pop</option>
+  <option value="Hip-Hop">Hip-Hop</option>
+  <option value="Trap">Trap</option>
+  <option value="RnB">RnB</option>
+  <option value="Electronic">Electronic</option>
+  <option value="Reggae">Reggae</option>
+  <option value="Latin">Latin</option>
+  <option value="Funk/Soul">Funk/Soul</option>
+  <option value="Country">Country</option>
+  <option value="Folk">Folk</option>
+  <option value="Blues">Blues</option>
+</select>
+</div>
+
+<div class="keyfilter-container">
+<label for="keyselect">Key:</label>
+<select id="keyselect">
+  <option value="">All Keys</option>
+  <option value="C">C</option>
+  <option value="Cm">Cm</option>
+  <option value="C#">C#</option>
+  <option value="C#m">C#m</option>
+  <option value="D">D</option>
+  <option value="Dm">Dm</option>
+  <option value="Eb">Eb</option>
+  <option value="Ebm">Ebm</option>
+  <option value="E">E</option>
+  <option value="Em">Em</option>
+  <option value="F">F</option>
+  <option value="F#">F#</option>
+  <option value="Fm">Fm</option>
+  <option value="F#m">F#m</option>
+  <option value="G">G</option>
+  <option value="G#">G#</option>
+  <option value="Gm">Gm</option>
+  <option value="G#m">G#m</option>
+  <option value="A">A</option>
+  <option value="Am">Am</option>
+  <option value="Bb">Bb</option>
+  <option value="Bbm">Bbm</option>
+  <option value="B">B</option>
+  <option value="Bm">Bm</option>
+</select>
+</div>
+</div>
+    <div class="upload-container">
+      <button id="uploadButton">Publish a track</button>
+    </div>
+
+
+
+
+
+
+<input type="checkbox" id="autoRecordCheckbox"> Auto record
+
+
+
+
+
+<div class="search-container">
+  <label for="search-container">Specific Track #: </label>
+  <input type="text" id="trackSearchInput" placeholder="">
+  <button id="searchButton">Search</button>
+  <button id="cancelButton">Cancel</button>
+</div>
+
+    <script src="website.js"></script>
+    <script src="uploadbutton.js"></script>
+    <script src="timer.js"></script>
+    <script src="recording.js"></script>
+    <script src="filter.js"></script>
+    <script src="chordfilter.js"></script>
+    <script src="save.js"></script>
+    <script src="autorecord.js"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+
+
+
+
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyAtnvURUGMPryY7KJWc6i2YVKbSs5r6EhM",
+  authDomain: "trackrecords-3a228.firebaseapp.com",
+  projectId: "trackrecords-3a228",
+  storageBucket: "trackrecords-3a228.appspot.com",
+  messagingSenderId: "267445828891",
+  appId: "1:267445828891:web:db04bbca72d8efd85227be",
+  measurementId: "G-ZXG9GRGNVE"
+    };
+    
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
+
+const storage = firebase.storage();
+const storageRef = storage.ref();
+
+function uploadAudioFile(file) {
+  const audioRef = storageRef.child(`audio/${file.name}`);
+  return audioRef.put(file);
+}
+
+function saveTrackInfo(trackData) {
+  const database = firebase.database();
+  const trackRef = database.ref('tracks').push();
+  return trackRef.set(trackData)
+    .then(() => trackRef.key);
+}
+
+function saveTextElements(genre, key, rhythm, color, intensity, instrument, chords) {
+  const trackData = {
+    audioUrl: "",
+    genre: genre,
+    key: key,
+    rhythm: rhythm,
+    color: color,
+    intensity: intensity,
+    instrument: instrument,
+    chords: chords
+  };
+
+  return saveTrackInfo(trackData);
+}
+
+
+
+function fetchTrackData() {
+  const database = firebase.database();
+  const trackRef = database.ref('tracks');
+
+  return trackRef.once('value')
+    .then(snapshot => snapshot.val())
+    .catch(error => {
+      console.error('Error fetching track data:', error);
+      throw error;
+    });
+}
+
+
+
+
+    // Other JavaScript code for your website
+  </script>
+
+
+  </body>
+</html>
+
+
